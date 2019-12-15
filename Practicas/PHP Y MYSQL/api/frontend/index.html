@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="datos"></h1>
+
+<script>
+  fetch('http://localhost/QBITkodi/Practicas/PHP%20Y%20MYSQL/api/backend/datos.php')
+  .then(datos=>datos.json())
+  .then(datos=>{
+    var h1= document.getElementById('datos');
+    console.log(h1);
+    h1.innerHTML =`
+    dolar: ${datos.dolar} - ${datos.euro}
+    `
+  })
+</script>
+
+  </body>
+</html>

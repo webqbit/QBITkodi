@@ -1,0 +1,101 @@
+.container{
+  width:100%;
+  max-width:1200px;
+}
+section {
+  margin-top: 30px;
+}
+
+.curso{
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  max-height: 325px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.curso::-webkit-scrollbar {
+    width: 2px;     /* Tamaño del scroll en vertical */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.curso::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.curso::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.curso::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+
+.curso:hover{
+  background: #F8F9F9;
+}
+.curso .curso-body{
+  padding: 13px;
+}
+.curso img{
+  width: 100%;
+}
+
+.btnn {
+  margin: auto;
+}
+
+ @media (max-width: 575px) {
+   .curso{
+     display: flex;
+       max-height: 120px;
+  }
+  .curso img{
+    width:40%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    float: left;
+  }
+  .curso .curso-body{
+    width: 100%;
+    float: left;
+    font-size: 14px;
+      padding: 5px 8px;
+  }
+  .tic{
+    font-size: 5px;
+  }
+
+}
+
+#contenidoCurso ul {
+ margin: 10;
+ padding: 0;
+}
+.tic{
+  border-radius: 5px;
+  font-size: 10px;
+  display:inline-flex;
+  padding:  0px 10px;
+  font-weight: bold;
+  margin: 0px 4px;
+}
+.javascript {
+  background: yellow;
+}
+.php {
+  background: #3FDBE1;
+}
+.html{
+  background: #FF5733;
+}
+.css{
+  background: #A9DFBF;
+}
+.mysql{
+  background: skyblue;
+}
